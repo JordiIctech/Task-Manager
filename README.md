@@ -12,3 +12,4 @@
 
 ## Permanent Links
 - Launch Development Server: https://docs.expo.dev/get-started/create-a-new-app/
+- Creating Access Keys: https://webkul.com/blog/github-push-with-two-factor-authentication/
