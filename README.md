@@ -6,8 +6,8 @@
 - Javascript
 
 ## Current Links:
+- https://docs.expo.dev/tutorial/planning/
 
-- https://docs.expo.dev/get-started/errors/
 
 ## Permanent Links:
 - Launch Development Server: https://docs.expo.dev/get-started/create-a-new-app/
@@ -15,6 +15,7 @@
 - Commit to Github: https://www.tutsmake.com/upload-project-files-on-github-using-command-line/
 
 ## Past Link:
+- https://docs.expo.dev/get-started/errors/
 - https://docs.expo.dev/get-started/installation/
 - https://reactnative.dev/docs/the-new-architecture/use-app-template
 - https://reactnative.dev/docs/environment-setup
