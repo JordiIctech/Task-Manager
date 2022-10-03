@@ -1,5 +1,5 @@
 ## Task Manager
-- React Native App to manage tasks.
+- React Native App to manage tasks. Mainly through the Expo module.
 
 ### Technologies:
 - React Native
