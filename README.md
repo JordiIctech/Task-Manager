@@ -7,6 +7,7 @@
 - Git
 - Node.js
 - Watchman
+- Yarn
 
 ## Current Links:
 - https://docs.expo.dev/tutorial/image/
