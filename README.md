@@ -4,6 +4,9 @@
 ### Technologies:
 - React Native
 - Javascript
+- Git
+- Node.js
+- Watchman
 
 ## Current Links:
 - https://docs.expo.dev/tutorial/image/
