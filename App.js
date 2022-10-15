@@ -1,20 +1,27 @@
 import React from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import logo from './assets/logo.png';
+import * as ImagePicker from 'expo-image-picker';
 
 //Logo is variable used imported from above. Image #2 in assets, #1 in url.
 export default function App() {
+    let openImagePickerAsync = async () => {    
+    let pickerResult = await ImagePicker.launchImageLibraryAsync();
+    console.log(pickerResult);
+  }
+
   return (
     <View style={styles.container}>
 
       <Image source={{ uri: "https://i.imgur.com/TkIrScD.png" }} style={styles.logo}/>
       <Text style={styles.instructions}>
-        To share a photo from your phone with a friend, just press the button below!
+        To share a photo from your phone with a friend, just press the button below! :D
       </Text>
       <Image source={logo} style={styles.logo} />
 
-      <TouchableOpacity
-        onPress={() => alert('Howdy!')}
+      <TouchableOpacity 
+        onPress={openImagePickerAsync} //Opens images
+        // onPress={() => alert('Howdy!')} // Gives text alert
         style={styles.button1}>
         <Text style={styles.buttontext1}>Pick a photo</Text>
       </TouchableOpacity>
