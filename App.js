@@ -5,11 +5,25 @@ import * as ImagePicker from 'expo-image-picker';
 
 //Logo is variable used imported from above. Image #2 in assets, #1 in url.
 export default function App() {
-    let openImagePickerAsync = async () => {    
-    let pickerResult = await ImagePicker.launchImageLibraryAsync();
-    console.log(pickerResult);
-  }
+  const [selectedImage, setSelectedImage] = React.useState(null);
 
+  let openImagePickerAsync = async () => {
+    let pickerResult = await ImagePicker.launchImageLibraryAsync();
+    if (pickerResult.cancelled === true) {
+      return;
+    }
+    setSelectedImage({ localUri: pickerResult.uri });
+  };
+  if (selectedImage !== null) {
+    return (
+      <View style={styles.container}>
+        <Image
+          source={{ uri: selectedImage.localUri }}
+          style={styles.importedI}
+        />
+      </View>
+    );
+  }
   return (
     <View style={styles.container}>
 
@@ -57,5 +71,10 @@ const styles = StyleSheet.create({
   buttontext1: {
     fontSize: 20,
     color: '#fff',
-  }
+  },
+  importedI: {
+    width: 30,
+    height: 30,
+    resizeMode: "contain"
+  },
 });
