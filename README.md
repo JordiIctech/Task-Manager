@@ -10,17 +10,18 @@
 - Yarn
 
 ## Current Links:
-- https://docs.expo.dev/tutorial/image-picker/
-
+- https://docs.expo.dev/tutorial/sharing/
 
 ## Permanent Links:
 - Launch Development Server: https://docs.expo.dev/get-started/create-a-new-app/
 - Creating Access Keys: https://webkul.com/blog/github-push-with-two-factor-authentication/
 - Commit to Github: https://www.tutsmake.com/upload-project-files-on-github-using-command-line/
 - Templates: https://github.com/templates-back4app/react-native-expo, https://github.com/codingki/react-native-expo-template
-- Multi Screens: https://docs.expo.dev/versions/latest/sdk/screens/
+- Multi Screens: https://reactnavigation.org/docs/hello-react-navigation/
+- Multi Screens2: https://docs.expo.dev/versions/latest/sdk/screens/
 
 ## Past Link:
+- https://docs.expo.dev/tutorial/image-picker/
 - https://docs.expo.dev/tutorial/image/
 - https://docs.expo.dev/tutorial/planning/
 - https://docs.expo.dev/get-started/errors/
