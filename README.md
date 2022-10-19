@@ -10,7 +10,7 @@
 - Yarn
 
 ## Current Links:
-- https://docs.expo.dev/tutorial/sharing/
+- N/A
 
 ## Permanent Links:
 - Launch Development Server: https://docs.expo.dev/get-started/create-a-new-app/
@@ -22,10 +22,12 @@
 - Multi Screens3 (video): https://www.youtube.com/watch?v=2QhxKJlMD4g&t=359s
 
 ## Past Link:
-- https://docs.expo.dev/tutorial/image-picker/
-- https://docs.expo.dev/tutorial/image/
-- https://docs.expo.dev/tutorial/planning/
-- https://docs.expo.dev/get-started/errors/
-- https://docs.expo.dev/get-started/installation/
-- https://reactnative.dev/docs/the-new-architecture/use-app-template
-- https://reactnative.dev/docs/environment-setup
+- https://docs.expo.dev/tutorial/configuration/ (completed
+- https://docs.expo.dev/tutorial/sharing/ (skipped)
+- https://docs.expo.dev/tutorial/image-picker/ (completed)
+- https://docs.expo.dev/tutorial/image/ (completed)
+- https://docs.expo.dev/tutorial/planning/ (completed)
+- https://docs.expo.dev/get-started/errors/ (completed)
+- https://docs.expo.dev/get-started/installation/ (completed)
+- https://reactnative.dev/docs/the-new-architecture/use-app-template (completed)
+- https://reactnative.dev/docs/environment-setup (completed)

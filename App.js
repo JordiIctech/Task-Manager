@@ -29,7 +29,7 @@ export default function App() {
 
       <Image source={{ uri: "https://i.imgur.com/TkIrScD.png" }} style={styles.logo}/>
       <Text style={styles.instructions}>
-        To share a photo from your phone with a friend, just press the button below! :D
+        To share a photo from your phone with a friend, just press the button below!
       </Text>
       <Image source={logo} style={styles.logo} />
 
