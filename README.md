@@ -19,6 +19,7 @@
 - Templates: https://github.com/templates-back4app/react-native-expo, https://github.com/codingki/react-native-expo-template
 - Multi Screens: https://reactnavigation.org/docs/hello-react-navigation/
 - Multi Screens2: https://docs.expo.dev/versions/latest/sdk/screens/
+- Multi Screens3 (video): https://www.youtube.com/watch?v=2QhxKJlMD4g&t=359s
 
 ## Past Link:
 - https://docs.expo.dev/tutorial/image-picker/
