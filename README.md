@@ -10,17 +10,15 @@
 - Yarn
 
 ## Current Links:
-- N/A
+- https://reactnavigation.org/docs/hello-react-navigation
 
 ## Permanent Links:
 - Launch Development Server: https://docs.expo.dev/get-started/create-a-new-app/
 - Creating Access Keys: https://webkul.com/blog/github-push-with-two-factor-authentication/
 - Commit to Github: https://www.tutsmake.com/upload-project-files-on-github-using-command-line/
 - Templates: https://github.com/templates-back4app/react-native-expo, https://github.com/codingki/react-native-expo-template
-- Multi Screens: https://reactnavigation.org/docs/hello-react-navigation/
-- Multi Screens2: https://docs.expo.dev/versions/latest/sdk/screens/
-- Multi Screens3 (video): https://www.youtube.com/watch?v=2QhxKJlMD4g&t=359s
-
+- Expo Installation: https://reactnavigation.org/docs/getting-started/
+- Start Multi Screens: https://reactnavigation.org/docs/hello-react-navigation (Accepted)
 ## Past Link:
 - https://docs.expo.dev/tutorial/configuration/ (completed)
 - https://docs.expo.dev/tutorial/sharing/ (skipped)
