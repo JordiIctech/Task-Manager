@@ -22,7 +22,7 @@
 - Multi Screens3 (video): https://www.youtube.com/watch?v=2QhxKJlMD4g&t=359s
 
 ## Past Link:
-- https://docs.expo.dev/tutorial/configuration/ (completed
+- https://docs.expo.dev/tutorial/configuration/ (completed)
 - https://docs.expo.dev/tutorial/sharing/ (skipped)
 - https://docs.expo.dev/tutorial/image-picker/ (completed)
 - https://docs.expo.dev/tutorial/image/ (completed)
