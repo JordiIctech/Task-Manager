@@ -18,7 +18,7 @@
 - Commit to Github: https://www.tutsmake.com/upload-project-files-on-github-using-command-line/
 - Templates: https://github.com/templates-back4app/react-native-expo, https://github.com/codingki/react-native-expo-template
 - Expo Installation: https://reactnavigation.org/docs/getting-started/
-- Start Multi Screens: https://reactnavigation.org/docs/hello-react-navigation (Accepted)
+- Start Multi Screens: https://reactnavigation.org/docs/hello-react-navigation
 ## Past Link:
 - https://docs.expo.dev/tutorial/configuration/ (completed)
 - https://docs.expo.dev/tutorial/sharing/ (skipped)
