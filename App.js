@@ -1,21 +1,38 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { View, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
-
-export default function App() {
+function HomeScreen() { //Screen 1
   return (
-    <View style={styles.container}>
-      <Text>To share a photo from your phone with a friend, just press the button below!</Text>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Home Screen!</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+function CalculatorScreen() { //Screen 2
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Calculator!</Text>
+    </View>
+  );
+}
+
+const Stack = createNativeStackNavigator();
+/*
+initialRouteName: Specifies starting screen
+Following name assign a name to the functions above, the functions act as screens.
+*/
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home"> 
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Calculator" component={CalculatorScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+export default App;
