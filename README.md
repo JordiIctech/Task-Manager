@@ -19,7 +19,9 @@
 - Templates: https://github.com/templates-back4app/react-native-expo, https://github.com/codingki/react-native-expo-template
 - Expo Installation: https://reactnavigation.org/docs/getting-started/
 - Start Multi Screens: https://reactnavigation.org/docs/hello-react-navigation
+
 ## Past Link:
+- Expo Installation: https://reactnavigation.org/docs/getting-started/ (completed)
 - https://docs.expo.dev/tutorial/configuration/ (completed)
 - https://docs.expo.dev/tutorial/sharing/ (skipped)
 - https://docs.expo.dev/tutorial/image-picker/ (completed)
