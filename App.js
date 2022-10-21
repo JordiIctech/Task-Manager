@@ -1,12 +1,17 @@
 import * as React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-function HomeScreen() { //Screen 1
+function HomeScreen({ navigation }) { //Screen 1, need to pass the navigation variable from the top.
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Home Screen!</Text>
+      
+      <Button
+        title="Go to Details"
+        onPress={() => navigation.navigate('Calculator')}
+      />
     </View>
   );
 }

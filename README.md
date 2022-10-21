@@ -10,7 +10,7 @@
 - Yarn
 
 ## Current Links:
-- https://reactnavigation.org/docs/hello-react-navigation
+- https://reactnavigation.org/docs/navigating/ (Navigating to a new screen​)
 
 ## Permanent Links:
 - Launch Development Server: https://docs.expo.dev/get-started/create-a-new-app/
@@ -19,9 +19,11 @@
 - Templates: https://github.com/templates-back4app/react-native-expo, https://github.com/codingki/react-native-expo-template
 - Expo Installation: https://reactnavigation.org/docs/getting-started/
 - Start Multi Screens: https://reactnavigation.org/docs/hello-react-navigation
-
+- Themes (Passing additional props): ​https://reactnavigation.org/docs/hello-react-navigation
+ 
 ## Past Link:
-- Expo Installation: https://reactnavigation.org/docs/getting-started/ (completed)
+- https://reactnavigation.org/docs/hello-react-navigation (completed)
+- https://reactnavigation.org/docs/getting-started/ (completed)
 - https://docs.expo.dev/tutorial/configuration/ (completed)
 - https://docs.expo.dev/tutorial/sharing/ (skipped)
 - https://docs.expo.dev/tutorial/image-picker/ (completed)
