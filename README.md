@@ -10,7 +10,8 @@
 - Yarn
 
 ## Current Links:
-- https://reactnavigation.org/docs/navigating/ (Navigating to a new screen​)
+- https://reactnavigation.org/docs/params
+
 
 ## Permanent Links:
 - Launch Development Server: https://docs.expo.dev/get-started/create-a-new-app/
@@ -22,6 +23,7 @@
 - Themes (Passing additional props): ​https://reactnavigation.org/docs/hello-react-navigation
  
 ## Past Link:
+- https://reactnavigation.org/docs/navigating/ (partial: "Navigate to a route multiple times​" skipped)
 - https://reactnavigation.org/docs/hello-react-navigation (completed)
 - https://reactnavigation.org/docs/getting-started/ (completed)
 - https://docs.expo.dev/tutorial/configuration/ (completed)
