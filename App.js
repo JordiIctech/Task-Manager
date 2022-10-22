@@ -9,20 +9,48 @@ function HomeScreen({ navigation }) { //Screen 1, need to pass the navigation va
       <Text>Home Screen!</Text>
       
       <Button
-        title="Go to Details"
+        title="Go to Calculator"
         onPress={() => navigation.navigate('Calculator')}
       />
+      <Button title="Go to Tasks" onPress={() => navigation.navigate('Tasks')}/>
+
     </View>
   );
 }
 
-function CalculatorScreen() { //Screen 2
+function CalculatorScreen({ navigation }) { //Screen 2
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Calculator!</Text>
+
+      <Button
+        title="Go to Home"
+        onPress={() => navigation.navigate('Home')}
+      />
+
     </View>
   );
 }
+
+function Tasks({ navigation }) { //Screen 3, popToTop also leads to home screen (aka initialRouteName screen)
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Calculator!</Text>
+
+      <Button
+        title="Go to Home"
+        onPress={() => navigation.navigate('Home')}
+      />
+      
+      <Button
+        title="Go back to first screen in stack"
+        onPress={() => navigation.popToTop()}
+      />
+
+    </View>
+  );
+}
+
 
 const Stack = createNativeStackNavigator();
 /*
@@ -35,8 +63,9 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home"> 
-        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Overview' }}/>
-        <Stack.Screen name="Calculator" component={CalculatorScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Home' }}/>
+        <Stack.Screen name="Calculator" component={CalculatorScreen} options={{ title: '' }}/>
+        <Stack.Screen name="Tasks" component={Tasks} />
       </Stack.Navigator>
     </NavigationContainer>
   );
