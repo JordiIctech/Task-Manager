@@ -18,19 +18,7 @@ function HomeScreen({ navigation }) { //Screen 1, need to pass the navigation va
   );
 }
 
-function CalculatorScreen({ navigation }) { //Screen 2
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Calculator!</Text>
-
-      <Button
-        title="Go to Home"
-        onPress={() => navigation.navigate('Home')}
-      />
-
-    </View>
-  );
-}
+import {CalculatorScreen} from "./Calculator.js"
 
 function Tasks({ navigation }) { //Screen 3, popToTop also leads to home screen (aka initialRouteName screen)
   return (

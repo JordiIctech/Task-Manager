@@ -21,6 +21,7 @@
 - Expo Installation: https://reactnavigation.org/docs/getting-started/
 - Start Multi Screens: https://reactnavigation.org/docs/hello-react-navigation
 - Themes (Passing additional props): ​https://reactnavigation.org/docs/hello-react-navigation
+- Importing JS to JS: https://bobbyhadz.com/blog/javascript-import-function-from-another-file
  
 ## Past Link:
 - https://reactnavigation.org/docs/navigating/ (partial: "Navigate to a route multiple times​" skipped)
