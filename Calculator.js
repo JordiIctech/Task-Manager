@@ -7,9 +7,7 @@ export function CalculatorScreen({ navigation }) { //Screen 2
     return (
         //The format for styles is "style = stylesfile.styleytype"
       <View style={styles.button1}>
-        <Text>Calculator!
-          Calculator
-        </Text>
+        <Text>Calculator</Text>
         <Button
           title="Go to Home"
           onPress={() => navigation.navigate('Home')}
