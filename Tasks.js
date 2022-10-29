@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { View, Text, Button, StyleSheet} from 'react-native';
-import {styles} from "./Stylesdef.js"
+import {styles} from "./Stylesdef.js" /*This variable {styles} is then used in the view to define the function
+                                        that controls its template.*/
 
 export function Tasks({ navigation }) { //Screen 3, popToTop also leads to home screen (aka initialRouteName screen)
     return (
