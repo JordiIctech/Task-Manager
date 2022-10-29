@@ -11,7 +11,11 @@
 
 ## Current Links:
 - https://reactnavigation.org/docs/params
+- https://www.reactnativeschool.com/building-an-ios-calculator-clone-with-react-native (Ongoing: "Styling Text in React Native" complete)
 
+## Current Problems:
+- react native expo how to display user input
+- react native expo how to display from javascript
 
 ## Permanent Links:
 - Launch Development Server: https://docs.expo.dev/get-started/create-a-new-app/
