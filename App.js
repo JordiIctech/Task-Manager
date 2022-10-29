@@ -24,11 +24,6 @@ import {Tasks} from "./Tasks.js"
 
 
 
-
-
-
-
-
 const Stack = createNativeStackNavigator();
 /*
 initialRouteName: Specifies starting screen
