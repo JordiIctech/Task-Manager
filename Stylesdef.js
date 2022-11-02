@@ -32,6 +32,20 @@ export const styles = StyleSheet.create({
       height: 30,
       resizeMode: "contain"
     },
+    // Calculator Styles
+    container: {
+      flex: 1,
+      backgroundColor: "#202020",
+      justifyContent: "flex-end",
+    },
+  
+    computedValue: {
+      color: "#fff",
+      fontSize: 40,
+      textAlign: "right",
+      marginRight: 20,
+      marginBottom: 10,
+    },
 
     defaulted: { flex: 1, alignItems: 'center', justifyContent: 'center' }
 
