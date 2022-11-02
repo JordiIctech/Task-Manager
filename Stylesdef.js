@@ -39,10 +39,19 @@ export const styles = StyleSheet.create({
     calresult: {
       color: "#fff",
       fontSize: 40,
-      textAlign: "right",
-      marginRight: 20,
-      marginBottom: 10,
+      textAlign: "center",
+      margin: 10,
     },
+
+    resultbutt: {
+      backgroundColor: "grey", 
+      padding: 10, 
+      width: 10, 
+      alignSelf: 'center',
+      margin: 10,
+      flexBasis: '100%',
+    },
+
     calnums: {
       color: "blue",
       padding: 2,
@@ -58,7 +67,7 @@ export const styles = StyleSheet.create({
       width: 70, // Width
       alignSelf: 'center',
       margin: 10,
-      flexBasis: '50%' // Value set to (1/n)% where n is the desired # of rows 
+      flexBasis: '30%' // Value set to (1/n)% where n is the desired # of rows 
     },
 
 
