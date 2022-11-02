@@ -14,9 +14,9 @@
 - https://www.reactnativeschool.com/building-an-ios-calculator-clone-with-react-native (Ongoing: "Styling Text in React Native" complete)
 
 ## Current Problems:
-- Decimal integer literals with a leading zero are forbidden in strict mode (Is expo using legacy js?)
-- Eval() my be deprecated, zero on front causes error
+- Replaced eval() with Function(), but function returns strange results when numbers have double digits
 - Button formatting
+- Look into changing TouchableOpacity to pressable (https://reactnative.dev/docs/pressable)
 
 ## Permanent Links:
 - Launch Development Server: https://docs.expo.dev/get-started/create-a-new-app/
