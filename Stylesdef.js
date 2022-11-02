@@ -1,12 +1,6 @@
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
     logo: {
       width: 305,
       height: 159,
@@ -36,16 +30,38 @@ export const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: "#202020",
-      justifyContent: "flex-end",
+      //justifyContent: "flex-end",
+      flexWrap: 'wrap',
+      flexDirection: 'row', // Changed from bottom to top format into row format
+      
     },
   
-    computedValue: {
+    calresult: {
       color: "#fff",
       fontSize: 40,
       textAlign: "right",
       marginRight: 20,
       marginBottom: 10,
     },
+    calnums: {
+      color: "blue",
+      padding: 2,
+      fontSize: 40,
+      textAlign: "center",
+      
+    },
+
+    calnumbutt: {
+      backgroundColor: "orange", //All three below create the circle
+      padding: 10, // Height
+      borderRadius: 100, // Cuts edges
+      width: 70, // Width
+      alignSelf: 'center',
+      margin: 10,
+      flexBasis: '50%' // Value set to (1/n)% where n is the desired # of rows 
+    },
+
+
 
     defaulted: { flex: 1, alignItems: 'center', justifyContent: 'center' }
 
