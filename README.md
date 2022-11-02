@@ -14,8 +14,9 @@
 - https://www.reactnativeschool.com/building-an-ios-calculator-clone-with-react-native (Ongoing: "Styling Text in React Native" complete)
 
 ## Current Problems:
-- react native expo how to display user input
-- react native expo how to display from javascript
+- Decimal integer literals with a leading zero are forbidden in strict mode (Is expo using legacy js?)
+- Eval() my be deprecated, zero on front causes error
+- Button formatting
 
 ## Permanent Links:
 - Launch Development Server: https://docs.expo.dev/get-started/create-a-new-app/
@@ -26,6 +27,7 @@
 - Start Multi Screens: https://reactnavigation.org/docs/hello-react-navigation
 - Themes (Passing additional props): ​https://reactnavigation.org/docs/hello-react-navigation
 - Importing JS to JS: https://bobbyhadz.com/blog/javascript-import-function-from-another-file
+- Hook Statements: https://reactjs.org/docs/hooks-state.html (To update views on user input)
  
 ## Past Link:
 - https://reactnavigation.org/docs/navigating/ (partial: "Navigate to a route multiple times​" skipped)
