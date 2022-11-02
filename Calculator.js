@@ -1,13 +1,21 @@
 // export function CalculatorScreen() {
 import React from "react"
 import { StatusBar } from "expo-status-bar"
-import { StyleSheet, View, SafeAreaView, Text } from "react-native"
+import { StyleSheet, View, SafeAreaView, Text, Button } from "react-native"
+import {styles} from "./Stylesdef.js"
 
-export function CalculatorScreen() {
-  const computedValue = 123456.23
+export function CalculatorScreen({ navigation }) {
+  var passingV = 134 + 9
+  var computedValue = passingV
 
   return (
     <View style={styles.container}>
+
+        <Button style={styles.button1}
+          title="1"
+          onPress={() => computedValue = 3}
+        />
+
       <StatusBar style="light" />
       <SafeAreaView>
         <Text style={styles.computedValue}>
@@ -17,19 +25,3 @@ export function CalculatorScreen() {
     </View>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#202020",
-    justifyContent: "flex-end",
-  },
-
-  computedValue: {
-    color: "#fff",
-    fontSize: 40,
-    textAlign: "right",
-    marginRight: 20,
-    marginBottom: 10,
-  },
-})
