@@ -14,6 +14,12 @@ export function CalculatorScreen({ navigation }) {
   return (
     <View style={styles.container}>
 
+        <SafeAreaView style={styles.resultbutt}>
+            <Text style={styles.calresult}>
+            {computedValue.toLocaleString()} 
+            </Text>
+        </SafeAreaView>
+
         <TouchableOpacity style={styles.calnumbutt} // Numbers 
           onPress={() => computedValue = setCount(computedValue + "1")}>
         <Text style={styles.calnums}>1</Text>
@@ -72,18 +78,18 @@ export function CalculatorScreen({ navigation }) {
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.calnumbutt} 
-          onPress={() => setCount(computedValue = parseInt(computedValue, 10) + "-")}>
-        <Text style={styles.calnums}>-</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.calnumbutt} 
           onPress={() => setCount(computedValue = parseInt(computedValue, 10) + "*")}>
         <Text style={styles.calnums}>*</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.calnumbutt} 
+          onPress={() => setCount(computedValue = parseInt(computedValue, 10) + "-")}>
+        <Text style={styles.calnums}>-</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.calnumbutt} 
           onPress={() => setCount(computedValue = parseInt(computedValue, 10) + "/")}>
-        <Text style={styles.calnums}>/</Text>
+        <Text style={styles.calnums}>÷</Text>
         </TouchableOpacity>
 
 
@@ -101,11 +107,7 @@ export function CalculatorScreen({ navigation }) {
 
     <StatusBar style="light" // SafeAreaView seems to be non-essential
     />
-      <SafeAreaView style={styles.resultbutt}>
-        <Text style={styles.calresult}>
-          {computedValue.toLocaleString()} 
-        </Text>
-      </SafeAreaView>
+
     </View>
   )
 }

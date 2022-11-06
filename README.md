@@ -15,7 +15,8 @@
 
 ## Current Problems:
 - Replaced eval() with Function(), but function returns strange results when numbers have double digits
-- Button formatting
+- Pressing enter with zero in front creates an error
+- Improve button formatting
 - Look into changing TouchableOpacity to pressable (https://reactnative.dev/docs/pressable)
 
 ## Permanent Links:

@@ -36,13 +36,6 @@ export const styles = StyleSheet.create({
       
     },
   
-    calresult: {
-      color: "#fff",
-      fontSize: 40,
-      textAlign: "center",
-      margin: 10,
-    },
-
     resultbutt: {
       backgroundColor: "grey", 
       padding: 10, 
@@ -70,7 +63,12 @@ export const styles = StyleSheet.create({
       flexBasis: '30%' // Value set to (1/n)% where n is the desired # of rows 
     },
 
-
+    calresult: {
+      color: "#fff",
+      fontSize: 40,
+      textAlign: "left",
+      margin: 10,
+    },
 
     defaulted: { flex: 1, alignItems: 'center', justifyContent: 'center' }
 
