@@ -14,10 +14,16 @@
 - https://www.reactnativeschool.com/building-an-ios-calculator-clone-with-react-native (Ongoing: "Styling Text in React Native" complete)
 
 ## Current Problems:
+### Calculator App
 - Replaced eval() with Function(), but function returns strange results when numbers have double digits
 - Pressing enter with zero in front creates an error
 - Improve button formatting
 - Look into changing TouchableOpacity to pressable (https://reactnative.dev/docs/pressable)
+### Task App
+- Change task background
+- Add buttons to change task progression
+- Add memory to app, to remember task progress
+
 
 ## Permanent Links:
 - Launch Development Server: https://docs.expo.dev/get-started/create-a-new-app/

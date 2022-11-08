@@ -30,7 +30,6 @@ export const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: "#202020",
-      //justifyContent: "flex-end",
       flexWrap: 'wrap',
       flexDirection: 'row', // Changed from bottom to top format into row format
       
