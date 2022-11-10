@@ -73,22 +73,22 @@ export function CalculatorScreen({ navigation }) {
 
         <TouchableOpacity style={styles.calnumbutt} // Operators
         //PasteInt removes zeros, which can't be used in strict mode.
-          onPress={() => setCount(computedValue = parseInt(computedValue, 10) + "+")}>
+          onPress={() => setCount(computedValue = calint(computedValue) + "+")}>
         <Text style={styles.calnums}>+</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.calnumbutt} 
-          onPress={() => setCount(computedValue = parseInt(computedValue, 10) + "*")}>
+          onPress={() => setCount(computedValue = calint(computedValue) + "*")}>
         <Text style={styles.calnums}>*</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.calnumbutt} 
-          onPress={() => setCount(computedValue = parseInt(computedValue, 10) + "-")}>
+          onPress={() => setCount(computedValue = calint(computedValue) + "-")}>
         <Text style={styles.calnums}>-</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.calnumbutt} 
-          onPress={() => setCount(computedValue = parseInt(computedValue, 10) + "/")}>
+          onPress={() => setCount(computedValue = calint(computedValue) + "/")}>
         <Text style={styles.calnums}>÷</Text>
         </TouchableOpacity>
 
