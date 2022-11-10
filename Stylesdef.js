@@ -69,6 +69,35 @@ export const styles = StyleSheet.create({
       margin: 10,
     },
 
-    defaulted: { flex: 1, alignItems: 'center', justifyContent: 'center' }
+    defaulted: { flex: 1, alignItems: 'center', justifyContent: 'center' },
+
+    // Task Styles
+
+    taskbuttM: {
+      backgroundColor: "pink", 
+      borderRadius: 100, 
+      width: 50, 
+      margin: 10,
+      position: "absolute",
+      marginTop: 25,
+    },
+
+    taskbuttP: {
+      backgroundColor: "lightgreen", 
+      borderRadius: 100, 
+      width: 50, 
+      alignSelf: 'left',
+      margin: 10,
+      position: "absolute",
+      marginTop: 25,
+      right: 0 // Default position set to left, so right must be specified.
+    },
+
+    tasksign: {
+      color: "grey",
+      fontSize: 40,
+      textAlign: "center",
+      
+    },
 
   })
