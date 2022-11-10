@@ -15,10 +15,10 @@
 
 ## Current Problems:
 ### Calculator App
-- Replaced eval() with Function(), but function returns strange results when numbers have double digits
-- Pressing enter with zero in front creates an error
 - Improve button formatting
 - Look into changing TouchableOpacity to pressable (https://reactnative.dev/docs/pressable)
+- Add a del/back button (<-)
+- No adding operation just adds number to currently displayed one. (Maybe not even a problem.)
 ### Task App
 - Change task background
 - Add buttons to change task progression
