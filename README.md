@@ -21,7 +21,7 @@
 - No adding operation just adds number to currently displayed one. (Maybe not even a problem.)
 ### Task App
 - Change task background
-- Add buttons to change task progression
+- Make task adding dynamic, generalize task creation into function and specify the repetitions.
 - Add memory to app, to remember task progress
 
 
