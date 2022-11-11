@@ -20,6 +20,12 @@ export function Testing({ navigation }) {
         SC(C -= 1)
     }
 
+    function flexing() {
+        return (<Text style={styles.tasksign}>+</Text>)
+    }
+
+    var text1 = `Finished ${task1C} out of ${task1C + task1M} doses` // Backticks needed (`)
+    
     return (
         <View
         style={{
@@ -27,7 +33,8 @@ export function Testing({ navigation }) {
                 height: "10%",
         }} // For a parent view YOU MUST SPECIFY HEIGHT AND WIDTH
       >
-        <Text style = {{margin: 10}}>Finished {task1C} out of {task1C + task1M} doses</Text>
+{/*Task 1 */}
+        <Text style = {{margin: 10}}>{text1}</Text>
         <View  style={{ height: "100%", width: "100%", flexDirection: 'row'}}>
         <View style={{ backgroundColor: "green", flex: task1C, marginTop: 10}} />
         <View style={{ backgroundColor: "darkblue", flex: task1M, marginTop: 10}} />
@@ -42,7 +49,8 @@ export function Testing({ navigation }) {
         <Text style={styles.tasksign}>+</Text>
         </TouchableOpacity>
         </View>
-    
+
+{/*Task 2 */}
         <Text style = {{margin: 10}}>{task2C} out of {task2C + task2M} completed</Text>
         <View  style={{ height: "100%", width: "100%", flexDirection: 'row'}}>
         <View style={{ backgroundColor: "green", flex: task2C, marginTop: 10}} />
@@ -58,6 +66,11 @@ export function Testing({ navigation }) {
         <Text style={styles.tasksign}>+</Text>
         </TouchableOpacity>
         </View>
+
+{/*Flex Task */}
+<Text style={styles.tasksign}>+</Text>
+{flexing()}
+
 
         </View>
 
