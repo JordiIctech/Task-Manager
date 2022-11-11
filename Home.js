@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Button, StyleSheet} from 'react-native';
+import { View, Text, Button, StyleSheet, TouchableOpacity} from 'react-native';
 import {styles} from "./Stylesdef.js"
 
 export function HomeScreen({ navigation }) { //Screen 1, need to pass the navigation variable from the top.
@@ -12,6 +12,8 @@ export function HomeScreen({ navigation }) { //Screen 1, need to pass the naviga
           onPress={() => navigation.navigate('Calculator')}
         />
         <Button title="Go to Tasks" onPress={() => navigation.navigate('Tasks')}/>
+
+        <Button color = "red" title="Testing Environment" onPress={() => navigation.navigate('Testing')}/>
   
       </View>
     );

@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { View, Text, Button, StyleSheet, TouchableOpacity} from 'react-native';
 import {styles} from "./Stylesdef.js" 
 
-export function Tasks({ navigation }) { 
+export function Testing({ navigation }) { 
     // M for missing, C for completed.
     var [task1M, setCount1M] = useState(5); // Initial number of tasks missing
     var [task1C, setCount1C] = useState(0); // setCount is just a variable, non specific name
@@ -29,9 +29,8 @@ export function Tasks({ navigation }) {
       >
         <Text style = {{margin: 10}}>Finished {task1C} out of {task1C + task1M} doses</Text>
         <View  style={{ height: "100%", width: "100%", flexDirection: 'row'}}>
-
         <View style={{ backgroundColor: "green", flex: task1C, marginTop: 10}} />
-        <View style={{ backgroundColor: "red", flex: task1M, marginTop: 10}} />
+        <View style={{ backgroundColor: "darkblue", flex: task1M, marginTop: 10}} />
 
         <TouchableOpacity style = {styles.taskbuttM} 
           onPress={() => uncompletion(setCount1M, task1M, setCount1C, task1C)}>
@@ -45,10 +44,9 @@ export function Tasks({ navigation }) {
         </View>
     
         <Text style = {{margin: 10}}>{task2C} out of {task2C + task2M} completed</Text>
-
         <View  style={{ height: "100%", width: "100%", flexDirection: 'row'}}>
         <View style={{ backgroundColor: "green", flex: task2C, marginTop: 10}} />
-        <View style={{ backgroundColor: "red", flex: task2M, marginTop: 10}} />
+        <View style={{ backgroundColor: "darkblue", flex: task2M, marginTop: 10}} />
 
         <TouchableOpacity style = {styles.taskbuttM} 
           onPress={() => uncompletion(setCount2M, task2M, setCount2C, task2C)}>
@@ -60,13 +58,6 @@ export function Tasks({ navigation }) {
         <Text style={styles.tasksign}>+</Text>
         </TouchableOpacity>
         </View>
-
-
-        <View  style={{ height: "100%", width: "100%", flexDirection: 'row'}}>
-            
-        </View>
-
-
 
         </View>
 
