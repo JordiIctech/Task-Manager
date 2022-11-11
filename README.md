@@ -10,6 +10,7 @@
 - Yarn
 
 ## Current Links:
+- https://reactnative.dev/docs/virtualizedlist (To create dynamic task creations)
 - https://reactnavigation.org/docs/params
 - https://www.reactnativeschool.com/building-an-ios-calculator-clone-with-react-native (Ongoing: "Styling Text in React Native" complete)
 
