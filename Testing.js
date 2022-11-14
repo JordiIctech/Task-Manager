@@ -21,7 +21,25 @@ export function Testing({ navigation }) {
     }
 
     function flexing() {
-        return (<Text style={styles.tasksign}>+</Text>)
+        return (   // Function inclosed within a "fragment".
+            <>   
+        <Text style = {{margin: 10}}>{task2C} out of {task2C + task2M} completed</Text>
+        <View  style={{ height: "100%", width: "100%", flexDirection: 'row'}}>
+        <View style={{ backgroundColor: "green", flex: task2C, marginTop: 10}} />
+        <View style={{ backgroundColor: "darkblue", flex: task2M, marginTop: 10}} />
+
+        <TouchableOpacity style = {styles.taskbuttM} 
+          onPress={() => uncompletion(setCount2M, task2M, setCount2C, task2C)}>
+        <Text style={styles.tasksign}>-</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style = {styles.taskbuttP} 
+          onPress={() => completion(setCount2M, task2M, setCount2C, task2C)}>
+        <Text style={styles.tasksign}>+</Text>
+        </TouchableOpacity>
+        </View>
+        </>  
+        );
     }
 
     var text1 = `Finished ${task1C} out of ${task1C + task1M} doses` // Backticks needed (`)
@@ -51,21 +69,7 @@ export function Testing({ navigation }) {
         </View>
 
 {/*Task 2 */}
-        <Text style = {{margin: 10}}>{task2C} out of {task2C + task2M} completed</Text>
-        <View  style={{ height: "100%", width: "100%", flexDirection: 'row'}}>
-        <View style={{ backgroundColor: "green", flex: task2C, marginTop: 10}} />
-        <View style={{ backgroundColor: "darkblue", flex: task2M, marginTop: 10}} />
 
-        <TouchableOpacity style = {styles.taskbuttM} 
-          onPress={() => uncompletion(setCount2M, task2M, setCount2C, task2C)}>
-        <Text style={styles.tasksign}>-</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style = {styles.taskbuttP} 
-          onPress={() => completion(setCount2M, task2M, setCount2C, task2C)}>
-        <Text style={styles.tasksign}>+</Text>
-        </TouchableOpacity>
-        </View>
 
 {/*Flex Task */}
 <Text style={styles.tasksign}>+</Text>
