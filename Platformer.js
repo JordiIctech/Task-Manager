@@ -27,8 +27,10 @@ export function Tasks({ navigation }) {
                 height: "10%",
         }} // For a parent view YOU MUST SPECIFY HEIGHT AND WIDTH
       >
+{/*Task 1 */}
         <Text style = {{margin: 10}}>Finished {task1C} out of {task1C + task1M} doses</Text>
         <View  style={{ height: "100%", width: "100%", flexDirection: 'row'}}>
+
         <View style={{ backgroundColor: "green", flex: task1C, marginTop: 10}} />
         <View style={{ backgroundColor: "red", flex: task1M, marginTop: 10}} />
 
@@ -42,8 +44,10 @@ export function Tasks({ navigation }) {
         <Text style={styles.tasksign}>+</Text>
         </TouchableOpacity>
         </View>
-    
+
+{/*Task 2*/}
         <Text style = {{margin: 10}}>{task2C} out of {task2C + task2M} completed</Text>
+
         <View  style={{ height: "100%", width: "100%", flexDirection: 'row'}}>
         <View style={{ backgroundColor: "green", flex: task2C, marginTop: 10}} />
         <View style={{ backgroundColor: "red", flex: task2M, marginTop: 10}} />
@@ -58,6 +62,13 @@ export function Tasks({ navigation }) {
         <Text style={styles.tasksign}>+</Text>
         </TouchableOpacity>
         </View>
+
+
+        <View  style={{ height: "100%", width: "100%", flexDirection: 'row'}}>
+            
+        </View>
+
+
 
         </View>
 

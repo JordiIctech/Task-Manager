@@ -55,9 +55,9 @@ export function Testing({ navigation }) {
 {flexing(10, "100%")}
 {flexing(15, "100%")}
 {flexing(11, "100%")}
-{flexing(17, "100%")}
-{flexing(14, "100%")}
-{flexing(34, "100%")}
+{flexing(67, "100%")}
+{flexing(3, "100%")}
+{flexing(34, "0%")}
 
         </View>
 

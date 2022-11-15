@@ -74,7 +74,7 @@ export const styles = StyleSheet.create({
     // Task Styles
 
     taskbuttM: {
-      backgroundColor: "pink", 
+      backgroundColor: "#ff471a", 
       borderRadius: 100, 
       width: 50, 
       margin: 10,
@@ -83,10 +83,9 @@ export const styles = StyleSheet.create({
     },
 
     taskbuttP: {
-      backgroundColor: "lightgreen", 
+      backgroundColor: "#00cc00", 
       borderRadius: 100, 
       width: 50, 
-      alignSelf: 'left',
       margin: 10,
       position: "absolute",
       marginTop: 25,
@@ -94,7 +93,7 @@ export const styles = StyleSheet.create({
     },
 
     tasksign: {
-      color: "grey",
+      color: "#333333",
       fontSize: 40,
       textAlign: "center",
       
