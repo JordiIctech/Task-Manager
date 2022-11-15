@@ -6,9 +6,8 @@ export function Testing({ navigation }) {
     // M for missing, C for completed.
     var [task1M, setCount1M] = useState(5); // Initial number of tasks missing
     var [task1C, setCount1C] = useState(0); // setCount is just a variable, non specific name
+//flex values, one must be zero or negative have the other one full.
 
-    var [task2M, setCount2M] = useState(20); //flex values, one must be zero or negative have the other one full.
-    var [task2C, setCount2C] = useState(0); 
 
     function completion(SM,M,SC,C){ //Add tasks as completed
         SM(M -= 1)
@@ -20,21 +19,24 @@ export function Testing({ navigation }) {
         SC(C -= 1)
     }
 
-    function flexing() {
+    function flexing(taskN, taskS) { //Task number and task start.
+        var [taskM, setCount2M] = useState(taskS); 
+        var [taskC, setCount2C] = useState(0); 
+
         return (   // Function inclosed within a "fragment".
             <>   
-        <Text style = {{margin: 10}}>{task2C} out of {task2C + task2M} completed</Text>
+        <Text style = {{margin: 10}}>{taskC} out of {taskC + taskM} completed</Text>
         <View  style={{ height: "100%", width: "100%", flexDirection: 'row'}}>
-        <View style={{ backgroundColor: "green", flex: task2C, marginTop: 10}} />
-        <View style={{ backgroundColor: "darkblue", flex: task2M, marginTop: 10}} />
+        <View style={{ backgroundColor: "green", flex: taskC, marginTop: 10}} />
+        <View style={{ backgroundColor: "darkblue", flex: taskM, marginTop: 10}} />
 
         <TouchableOpacity style = {styles.taskbuttM} 
-          onPress={() => uncompletion(setCount2M, task2M, setCount2C, task2C)}>
+          onPress={() => uncompletion(setCount2M, taskM, setCount2C, taskC)}>
         <Text style={styles.tasksign}>-</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style = {styles.taskbuttP} 
-          onPress={() => completion(setCount2M, task2M, setCount2C, task2C)}>
+          onPress={() => completion(setCount2M, taskM, setCount2C, taskC)}>
         <Text style={styles.tasksign}>+</Text>
         </TouchableOpacity>
         </View>
@@ -42,6 +44,8 @@ export function Testing({ navigation }) {
         );
     }
 
+    var totaltasks = 1;
+    
     var text1 = `Finished ${task1C} out of ${task1C + task1M} doses` // Backticks needed (`)
     
     return (
@@ -73,8 +77,10 @@ export function Testing({ navigation }) {
 
 {/*Flex Task */}
 <Text style={styles.tasksign}>+</Text>
-{flexing()}
 
+{eval("for(let i = 0; i < totaltasks; i++) { \
+            flexing(i,10); \
+        }")}
 
         </View>
 
