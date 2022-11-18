@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { View, Text, Button, StyleSheet, TouchableOpacity} from 'react-native';
 import {styles} from "./Stylesdef.js" 
 
-export function Tasks({ navigation }) { 
+export function Platformer({ navigation }) { 
     // M for missing, C for completed.
     var [task1M, setCount1M] = useState(5); // Initial number of tasks missing
     var [task1C, setCount1C] = useState(0); // setCount is just a variable, non specific name
