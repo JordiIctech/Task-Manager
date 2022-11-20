@@ -33,7 +33,13 @@ export function Platformer({ navigation }) {
 
 
         <TouchableOpacity onPress={()=> setCountL(1,1)}>
-          <Image style={{position: "absolute", left: 100, top: 100}} source={require('./assets/Sprite-Sigma.webp')} />
+          <Image style={{position: "absolute", transform: [{rotate: '90deg'}], left: 10, top: 10}} 
+          source={require('./assets/pizzabase.png')} />
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={()=> setCountL(1,1)}>
+          <Image style={{position: "absolute", transform: [{rotate: '0deg'}], left: 10, top: 10, width: 100}} 
+          source={require('./assets/arrowbox.png')} />
         </TouchableOpacity>
 
         </View>
