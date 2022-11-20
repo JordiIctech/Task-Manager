@@ -26,6 +26,7 @@
 - Add memory to app, to remember task progress
 ### Platformer
 - Display map: (https://reactnative.dev/docs/image)
+- Position character: (https://reactnative.dev/docs/layout-props)
 
 
 ## Permanent Links:

@@ -14,8 +14,11 @@ export function Platformer({ navigation }) {
       }}  //Children can only incapsulate parent size
     >
           
-         <Image style = {{ width: "100%", height: "70%", }} source={require("./assets/PrimevalMountain.png")} />
-         <Text style = {{margin: 10}}>completed</Text>
+         <Image style = {{ width: "100%", height: "100%", position: "absolute", resizeMode: "stretch"}} 
+         source={require("./assets/californiamap.jpg")} />
+
+         <Image style = {{position: "absolute", left: 10, top: 10}} //Position of character based on top left start.
+         source={require("./assets/Sprite-Sigma.webp")} />
         </View>
 
     );
