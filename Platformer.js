@@ -9,12 +9,12 @@ export function Platformer({ navigation }) {
       <View
       style={{
               flexDirection: 'col',
-              height: "50%",
+              height: "100%",
               width: "100%",   //Parent View
       }}  //Children can only incapsulate parent size
     >
           
-         <Image style = {{ width: "100%", height: "50%", resizeMode: "cover"}} source={require("./assets/PrimevalMountain.png")} />
+         <Image style = {{ width: "100%", height: "70%", }} source={require("./assets/PrimevalMountain.png")} />
          <Text style = {{margin: 10}}>completed</Text>
         </View>
 
