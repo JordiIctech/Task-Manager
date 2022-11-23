@@ -18,7 +18,7 @@ export function Platformer({ navigation }) {
 
     return (
 
-      <View
+      <View onTouchStart={(e) => {console.log('touchMove',e.nativeEvent)}} //Get cordinates of general view
       style={{
               flexDirection: 'col',
               height: "100%",
