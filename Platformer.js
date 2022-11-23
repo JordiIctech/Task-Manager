@@ -16,9 +16,19 @@ export function Platformer({ navigation }) {
 
   var velocity = 10
 
+  var xcoords = "100"
+  function coordination(e){
+    console.log('touchMove',e.nativeEvent) //touchMove just name.
+    
+  
+  
+  
+  
+  }
+
     return (
 
-      <View onTouchStart={(e) => {console.log('touchMove',e.nativeEvent)}} //Get cordinates of general view
+      <View onTouchStart={(e) => {coordination(e)}} //Get cordinates of general view and send to outer function
       style={{
               flexDirection: 'col',
               height: "100%",
