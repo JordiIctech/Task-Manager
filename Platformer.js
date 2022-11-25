@@ -16,14 +16,12 @@ export function Platformer({ navigation }) {
 
   var velocity = 10
 
-  var xcoords = "100"
   function coordination(e){
-    console.log('touchMove',e.nativeEvent) //touchMove just name.
-    
-  
-  
-  
-  
+  var coordsX = e.nativeEvent.pageX
+  var coordsY = e.nativeEvent.pageY //Just e.nativeEvent to get all coords (remove .locationY)
+  if (coordsX < 265 || coordsY < 750){  
+    console.log("X", coordsX) 
+    console.log("Y", coordsY) }
   }
 
     return (

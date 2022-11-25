@@ -26,9 +26,9 @@
 - Add memory to app, to remember task progress
 ### Platformer
 - Display map: (https://reactnative.dev/docs/image)
-- Position character: (https://reactnative.dev/docs/layout-props)
-- Get position to variable (https://reactnative.dev/docs/0.60/view)
 - Set repeating intervals to make fluid movement (https://reactnative.dev/docs/timers)
+### Sound Player
+- Start
 
 ## Permanent Links:
 - Launch Development Server: https://docs.expo.dev/get-started/create-a-new-app/
