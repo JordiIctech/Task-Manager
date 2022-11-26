@@ -15,6 +15,8 @@ export function HomeScreen({ navigation }) { //Screen 1, need to pass the naviga
 
         <Button title="Platformer" onPress={() => navigation.navigate('Platformer')}/>
 
+        <Button title="Video" onPress={() => navigation.navigate('Video')}/>
+
         <Button color = "red" title="Testing Environment" onPress={() => navigation.navigate('Testing')}/>
   
       </View>
