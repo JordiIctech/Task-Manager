@@ -27,8 +27,9 @@
 ### Platformer
 - Display map: (https://reactnative.dev/docs/image)
 - Set repeating intervals to make fluid movement (https://reactnative.dev/docs/timers)
-### Sound Player
+### Video Player
 - Start
+- Make image show
 
 ## Permanent Links:
 - Launch Development Server: https://docs.expo.dev/get-started/create-a-new-app/
