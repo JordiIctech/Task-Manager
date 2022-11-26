@@ -13,6 +13,8 @@ import {Testing} from "./Testing.js"
 
 import {Platformer} from "./Platformer"
 
+import {Video} from "./Video"
+
 const Stack = createNativeStackNavigator();
 /*
 initialRouteName: Specifies starting screen
@@ -28,6 +30,7 @@ function App() {
         <Stack.Screen name="Calculator" component={CalculatorScreen} options={{ title: '' }}/>
         <Stack.Screen name="Tasks" component={Tasks} />
         <Stack.Screen name="Platformer" component={Platformer} options={{ title: 'Platy' }}/>
+        <Stack.Screen name="Video" component={Video} options={{ title: 'Video' }}/>
         <Stack.Screen name="Testing" component={Testing} options={{ title: '!!!Testing!!!' }}/>
       </Stack.Navigator>
     </NavigationContainer>
