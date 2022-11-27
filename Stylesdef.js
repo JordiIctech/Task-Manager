@@ -12,16 +12,19 @@ export const styles = StyleSheet.create({
       fontSize: 18,
       marginHorizontal: 15,
     },
+ 
+    defaulted: { flex: 0.5, alignItems: 'center', justifyContent: 'center', 
+      flexDirection: 'row', width: "100%", height: "100%", flexWrap: 'wrap',
+    },
 
-    defaulted: { flex: 1, alignItems: 'center', justifyContent: 'center', 
-                  flexDirection: 'col', width: "100%", height: "100%" },
-
+    homeparentbutton: {alignItems: 'center', margin: 12
+  },
 
     homebutton:{
       width: 100, height: 100
     },
 
-    hometext: {color: 'grey', alignItems: 'center'},
+    hometext: {color: 'grey', alignItems: 'center', fontSize:"20"},
 
     button1: {
       backgroundColor: "lightblue",
