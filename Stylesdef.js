@@ -12,6 +12,17 @@ export const styles = StyleSheet.create({
       fontSize: 18,
       marginHorizontal: 15,
     },
+
+    defaulted: { flex: 1, alignItems: 'center', justifyContent: 'center', 
+                  flexDirection: 'col', width: "100%", height: "100%" },
+
+
+    homebutton:{
+      width: 100, height: 100
+    },
+
+    hometext: {color: 'grey', alignItems: 'center'},
+
     button1: {
       backgroundColor: "lightblue",
       padding: 20,
@@ -68,8 +79,6 @@ export const styles = StyleSheet.create({
       textAlign: "left",
       margin: 10,
     },
-
-    defaulted: { flex: 1, alignItems: 'center', justifyContent: 'center' },
 
     // Task Styles
 
