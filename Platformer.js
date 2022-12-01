@@ -4,32 +4,53 @@ import {styles} from "./Stylesdef.js"
 
 export function Platformer({ navigation }) { 
 
-
-//---------------------------------------------------- Unfinished
-
-function direction(SX, X, SY, Y){
-  SX(xchange = X)
-  SY(ychange = Y)
-}
-position(xchange,ychange)
-
-function position(Xchan,Ychan){ //Moves the character based on arrow click
-  useEffect(() => {
-    const interval = setInterval(() => {
-    setCountL(leftP += Xchan)
-    setCountT(topP += Ychan)}, 1000);
-    console.log('Ten seconds have passed');
-    return () => clearInterval(interval);
-  }, []); // Not sure what [] does.
-}
-    
-//---------------------------------------------------- Unfinished
   var [leftP, setCountL] = useState(0); 
   var [topP, setCountT] = useState(0); 
   var [xchange, setCountX] = useState(0); 
   var [ychange, setCountY] = useState(0); 
 
   var velocity = 10
+  let interval
+//---------------------------------------------------- Unfinished
+/*
+function direction(SX, X, SY, Y){
+  positions()
+  SX(xchange = X)
+  SY(ychange = Y)
+  console.log("Outer", xchange, ychange)
+}
+
+function positions(){
+  useEffect(() => {
+    var interval = setInterval(() => {
+    setCountL(leftP += xchange)
+    setCountT(topP += ychange);
+    console.log("inner", xchange, ychange);}
+    , 3000);
+    
+    return () => clearInterval(interval);
+  }, []); // Not sure what [] does.
+}
+*/
+function direction(SX, X, SY, Y){
+  clearInterval(interval) //Stops set interval
+  position()
+  SX(xchange = X)
+  SY(ychange = Y)
+  console.log("Outer", xchange, ychange)
+}
+
+function position(){
+  interval = setInterval(() => {
+  setCountL(leftP += xchange)
+  setCountT(topP += ychange);
+  console.log("inner", xchange, ychange);}
+  , 3000);
+  
+  return () => clearInterval(interval);
+  }
+
+//---------------------------------------------------- Unfinished
 
   function coordination(e){
   var coordsX = e.nativeEvent.pageX
@@ -83,7 +104,7 @@ function position(Xchan,Ychan){ //Moves the character based on arrow click
         </TouchableOpacity>
 
 {/*Stop Movement*/}
-        <TouchableOpacity onPress={()=> position(setCountX,0,setCountY,0)}>
+        <TouchableOpacity onPress={()=> direction(setCountX,0,setCountY,0)}>
           <Image style={{position: "absolute", transform: [{rotate: '0deg'}], //Icon
           left: 335, top: 720, width: 40, height: 40}} 
           source={require('./assets/icon.png')} />
