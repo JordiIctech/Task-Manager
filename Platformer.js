@@ -1,16 +1,22 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { View, Text, Button, StyleSheet, TouchableOpacity, Image} from 'react-native';
 import {styles} from "./Stylesdef.js" 
 
 export function Platformer({ navigation }) { 
 
-
-
-  function position(SL, L, ST, T, Vel){
+  function position(SL, L, ST, T, Vel){ //Moves the character based on arrow click
       SL(leftP += L*Vel)
       ST(topP += T*Vel)
   }
+//---------------------------------------------------- Unfinished
+useEffect(() => {
+  const interval = setInterval(() => {
+    console.log('Ten seconds have passed');
+  }, 10000);
+  return () => clearInterval(interval);
+}, []); // Not sure what [] does.
 
+//---------------------------------------------------- Unfinished
   var [leftP, setCountL] = useState(0); 
   var [topP, setCountT] = useState(0); 
 
