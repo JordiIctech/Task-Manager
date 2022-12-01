@@ -27,6 +27,7 @@
 ### Platformer
 - Display map: (https://reactnative.dev/docs/image)
 - Set repeating intervals to make fluid movement (https://reactnative.dev/docs/timers)
+- Change it into the zombie game where they randomly spawn and home to you. Shoot where you touch.
 ### Video Player
 - Start
 - Make image show
