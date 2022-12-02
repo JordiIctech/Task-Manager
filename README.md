@@ -12,7 +12,7 @@
 ## Current Links:
 - https://reactnative.dev/docs/virtualizedlist (To create dynamic task creations)
 - https://reactnavigation.org/docs/params
-- https://www.reactnativeschool.com/building-an-ios-calculator-clone-with-react-native (Ongoing: "Styling Text in React Native" complete)
+- https://stackoverflow.com/questions/54317501/setinterval-not-clearing-properly-in-react-js-when-dealing-with-react-youtube-pa
 
 ## Current Problems:
 ### Calculator App
@@ -54,3 +54,4 @@
 - https://docs.expo.dev/get-started/installation/ (completed)
 - https://reactnative.dev/docs/the-new-architecture/use-app-template (completed)
 - https://reactnative.dev/docs/environment-setup (completed)
+- https://www.reactnativeschool.com/building-an-ios-calculator-clone-with-react-native (Ongoing: "Styling Text in React Native" complete)
