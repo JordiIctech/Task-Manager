@@ -32,22 +32,27 @@ function positions(){
   }, []); // Not sure what [] does.
 }
 */
-function direction(SX, X, SY, Y){
-  clearInterval(interval) //Stops set interval
-  position()
-  SX(xchange = X)
-  SY(ychange = Y)
-  console.log("Outer", xchange, ychange)
-}
 
 function position(){
-  interval = setInterval(() => {
   setCountL(leftP += xchange)
   setCountT(topP += ychange);
-  console.log("inner", xchange, ychange);}
-  , 3000);
+  console.log("inner", xchange, ychange);
+  }
+
+
+  function starting(){
+    return setInterval(position, 1000);
+  }
   
-  return () => clearInterval(interval);
+  var control = starting()
+
+
+  function direction(SX, X, SY, Y){
+    clearInterval(control) //Stops set interval
+    starting()
+    SX(xchange = X)
+    SY(ychange = Y)
+    console.log("Outer", xchange, ychange)
   }
 
 //---------------------------------------------------- Unfinished
