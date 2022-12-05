@@ -25,12 +25,14 @@
 - Make task adding dynamic, generalize task creation into function and specify the repetitions.
 - Add memory to app, to remember task progress
 ### Platformer
-- Display map: (https://reactnative.dev/docs/image)
-- Set repeating intervals to make fluid movement (https://reactnative.dev/docs/timers)
 - Change it into the zombie game where they randomly spawn and home to you. Shoot where you touch.
+- Intervals not resetting, when initiated it stacks.
 ### Video Player
-- Start
-- Make image show
+- Make image show, possibly gif
+- Play video from link.
+- Play song on button press.
+- Audio Link (https://docs.expo.dev/versions/latest/sdk/audio/)
+- Play song in background, record audio
 
 ## Permanent Links:
 - Launch Development Server: https://docs.expo.dev/get-started/create-a-new-app/
