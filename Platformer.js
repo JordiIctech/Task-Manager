@@ -46,7 +46,6 @@ function position(){
   
   var control = starting()
 
-
   function direction(SX, X, SY, Y){
     clearInterval(control) //Stops set interval
     starting()
@@ -80,7 +79,6 @@ function position(){
 
          <Image style = {{position: "absolute", top: topP, left: leftP}} //Position of character based on top left start.
          source={require("./assets/Sprite-Sigma.webp")} />
-
 
 
 {/*Straight Arrows*/}
