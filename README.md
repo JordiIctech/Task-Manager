@@ -29,9 +29,9 @@
 - Intervals not resetting, when initiated it stacks.
 ### Video Player
 - Make image show, possibly gif
+- Audio Link (https://docs.expo.dev/versions/latest/sdk/audio/)
 - Play video from link.
 - Play song on button press.
-- Audio Link (https://docs.expo.dev/versions/latest/sdk/audio/)
 - Play song in background, record audio
 
 ## Permanent Links:

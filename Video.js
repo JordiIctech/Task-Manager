@@ -27,12 +27,20 @@ export function Video({ navigation }) {
   }, [sound]);
 
     return (
- 
+        
+        <View>
+
         <TouchableOpacity onPress={()=> playSound()}>
-        <Image style={{position: "center", width: "100%", resizeMode: "contain"}} 
+        <Image style={{position: "center", width: "100%", height: "50%", resizeMode: "contain"}} 
         source={require('./assets/icon.png')} />
         </TouchableOpacity>
 
+        <TouchableOpacity onPress={()=> playSound()}>
+        <Image style={{position: "center" ,width: "100%" , height: "60%", resizeMode: "contain"}} 
+        source={require('./assets/skelly.gif')} />
+        </TouchableOpacity>
+        
+        </View>
 
     );
 }
