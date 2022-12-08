@@ -7,9 +7,11 @@ export function Video({ navigation }) {
 
   const [sound, setSound] = React.useState();
 
+    var soundfile = "PassingThrough.mp3"
+
   async function playSound() {
     console.log('Loading Sound');
-    const { sound } = await Audio.Sound.createAsync( require('./assets/PassingThrough.mp3')
+    const { sound } = await Audio.Sound.createAsync( require(`./assets/${soundfile}`)
     );
     setSound(sound);
 
@@ -26,17 +28,17 @@ export function Video({ navigation }) {
       : undefined;
   }, [sound]);
 
-    return (
+    return ( // Use calculator styling
         
         <View>
 
         <TouchableOpacity onPress={()=> playSound()}>
-        <Image style={{position: "center", width: "100%", height: "50%", resizeMode: "contain"}} 
+        <Image style={{position: "center", width: "100%", height: "50%", resizeMode: "contain", marginTop: 25,}} 
         source={require('./assets/icon.png')} />
         </TouchableOpacity>
 
         <TouchableOpacity onPress={()=> playSound()}>
-        <Image style={{position: "center" ,width: "100%" , height: "60%", resizeMode: "contain"}} 
+        <Image style={{position: "center" ,width: "100%" , height: "60%", resizeMode: "contain", marginTop: -20}} 
         source={require('./assets/skelly.gif')} />
         </TouchableOpacity>
         
