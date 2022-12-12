@@ -1,65 +1,36 @@
-import React, { useState } from "react"
-import { View, Text, Button, StyleSheet, TouchableOpacity} from 'react-native';
-import {styles} from "./Stylesdef.js" 
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, Image, Button } from 'react-native';
+import { Asset } from 'expo-asset';
 
 export function Testing({ navigation }) { 
 
-    function completion(SM,M,SC,C){ //Add tasks as completed
-        SM(M -= 1)
-        SC(C += 1)
-    }
+    const [images, setImages] = useState([]);
 
-    function uncompletion(SM,M,SC,C){
-        SM(M += 1)
-        SC(C -= 1)
-    }
+  const handlePress = () => {
+    const source = Asset.fromModule(require('./assets/icon.png')).uri;
+    setImages([...images, source]);
+  };
 
-    // M for missing, C for completed, S for starting number of tasks, O for opacity
-    // setCount is just a variable, non specific name
-    //flex values, one must be zero or negative have the other one full.
-    function flexing(taskS, taskO) { //Task number and task start.
-        var [taskM, setCount2M] = useState(taskS); 
-        var [taskC, setCount2C] = useState(0); 
+  return (
+    <View style={styles.container}>
+      <Button onPress={handlePress} title="Add Image" />
+      {images.map((image, index) => (
+        <Image key={index} source={{ uri: image }} style={styles.image} />
+      ))}
+    </View>
+  );
+}
 
-        return (   // Function inclosed within a "fragment".
-            <>   
-        <Text style = {{margin: 10, opacity: taskO}}>{taskC} out of {taskC + taskM} completed</Text>
-        <View  style={{ height: "100%", width: "100%", flexDirection: 'row', opacity: taskO}}>
-        <View style={{ backgroundColor: "green", flex: taskC, marginTop: 10}} />
-        <View style={{ backgroundColor: "darkblue", flex: taskM, marginTop: 10}} />
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  image: {
+    width: 200,
+    height: 200,
+  },
+});
 
-        <TouchableOpacity style = {styles.taskbuttM} 
-          onPress={() => uncompletion(setCount2M, taskM, setCount2C, taskC)}>
-        <Text style={styles.tasksign}>-</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style = {styles.taskbuttP} 
-          onPress={() => completion(setCount2M, taskM, setCount2C, taskC)}>
-        <Text style={styles.tasksign}>+</Text>
-        </TouchableOpacity>
-        </View>
-        </>  
-        );
-    }
-    
-    return (
-        <View
-        style={{
-                flexDirection: 'col',
-                height: "10%",
-        }} // For a parent view YOU MUST SPECIFY HEIGHT AND WIDTH
-      >
-
-{/*Flex Task */}
-
-{flexing(10, "100%")}
-{flexing(15, "100%")}
-{flexing(11, "100%")}
-{flexing(67, "100%")}
-{flexing(3, "100%")}
-{flexing(34, "0%")}
-
-        </View>
-
-    );
-  }
