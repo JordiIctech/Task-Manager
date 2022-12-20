@@ -26,7 +26,7 @@ export function Testing({ navigation }) {
     await sound.playAsync();}
 
     if(soundfile == "1"){
-      const { sound } = await Audio.Sound.createAsync( require(`./assets/${"ping.mp3"}`)
+      const { sound } = await Audio.Sound.createAsync( require(`./assets/${"elec.mp3"}`)
       );
       setSound(sound);
       console.log('Playing Sound');
@@ -40,7 +40,7 @@ export function Testing({ navigation }) {
         await sound.playAsync();}
 
         if(soundfile == "3"){
-          const { sound } = await Audio.Sound.createAsync( require(`./assets/${"elec.mp3"}`)
+          const { sound } = await Audio.Sound.createAsync( require(`./assets/${"ping.mp3"}`)
           );
           setSound(sound);
           console.log('Playing Sound');
