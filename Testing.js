@@ -58,25 +58,27 @@ export function Testing({ navigation }) {
 
     return ( // Use calculator styling
         
-        <View>
+        <View style= {{flex: 1,
+          flexWrap: 'wrap',
+          flexDirection: 'row',}}>
 
         <TouchableOpacity onPress={()=> clicked(setFile,0)}>
-        <Image style={{position: "center", width: "100%", height: "25%", resizeMode: "contain", marginTop: 25,}} 
+        <Image style={styles.musicplay} 
         source={require('./assets/icon.png')} />
         </TouchableOpacity>
 
         <TouchableOpacity onPress={()=> clicked(setFile,1)}>
-        <Image style={{position: "center" ,width: "100%" , height: "25%", resizeMode: "contain", marginTop: -20}} 
+        <Image style={styles.musicplay}  
         source={require('./assets/skelly.gif')} />
         </TouchableOpacity>
 
         <TouchableOpacity onPress={()=> clicked(setFile,2)}>
-        <Image style={{position: "center" ,width: "100%" , height: "25%", resizeMode: "contain", marginTop: -20}} 
+        <Image style={styles.musicplay}  
         source={require('./assets/skelly.gif')} />
         </TouchableOpacity>
 
         <TouchableOpacity onPress={()=> clicked(setFile,3)}>
-        <Image style={{position: "center" ,width: "100%" , height: "25%", resizeMode: "contain", marginTop: -20}} 
+        <Image style={styles.musicplay} 
         source={require('./assets/skelly.gif')} />
         </TouchableOpacity>
         

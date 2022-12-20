@@ -111,4 +111,13 @@ export const styles = StyleSheet.create({
       
     },
 
+    musicplay:{
+      padding: 10,
+      borderRadius: 100, 
+      width: 200, 
+      height: 100,
+      alignSelf: 'center',
+      margin: 10,
+      flexBasis: 175 
+    },
   })
