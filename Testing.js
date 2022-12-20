@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { View, Text, Button, StyleSheet, TouchableOpacity, Image} from 'react-native';
+import { View, Text, Button, StyleSheet, TouchableOpacity, Image, ImageBackground} from 'react-native';
 import {styles} from "./Stylesdef.js" 
 import { Audio } from 'expo-av';
 
@@ -58,10 +58,11 @@ export function Testing({ navigation }) {
 
     return ( // Use calculator styling
         
-        <View style= {{flex: 1,
-          flexWrap: 'wrap',
-          flexDirection: 'row',}}>
-
+        <View style= {{flex: 1, flexWrap: 'wrap', flexDirection: 'row', imagebackground: ""}}>
+          
+        <Image style = {{ width: "100%", height: "100%", position: "absolute", resizeMode: "cover"}} 
+         source={require("./assets/thetrip.gif")} />
+ 
         <TouchableOpacity onPress={()=> clicked(setFile,0)}>
         <Image style={styles.musicplay} 
         source={require('./assets/icon.png')} />
@@ -74,12 +75,12 @@ export function Testing({ navigation }) {
 
         <TouchableOpacity onPress={()=> clicked(setFile,2)}>
         <Image style={styles.musicplay}  
-        source={require('./assets/skelly.gif')} />
+        source={require('./assets/cropsigma.gif')} />
         </TouchableOpacity>
 
         <TouchableOpacity onPress={()=> clicked(setFile,3)}>
         <Image style={styles.musicplay} 
-        source={require('./assets/skelly.gif')} />
+        source={require('./assets/pizzabase.png')} />
         </TouchableOpacity>
         
         </View>
