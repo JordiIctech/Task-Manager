@@ -33,7 +33,7 @@ export function HomeScreen({ navigation }) { //Screen 1, need to pass the naviga
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.homeparentbutton}
-        onPress={() => navigation.navigate('Video')}>
+        onPress={() => navigation.navigate('Music')}>
         <Image style={styles.homebutton} 
           source={require('./assets/videoicon.png')} />
           <Text style={styles.hometext}>Video</Text>

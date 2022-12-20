@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react"
-import { View, Text, Button, StyleSheet, TouchableOpacity, Image} from 'react-native';
+import { View, Text, Button, StyleSheet, TouchableOpacity, Image, ImageBackground} from 'react-native';
 import {styles} from "./Stylesdef.js" 
 import { Audio } from 'expo-av';
 
-export function Video({ navigation }) { 
+export function Music({ navigation }) { 
 
   const [sound, setSound] = React.useState();
 
@@ -26,7 +26,7 @@ export function Video({ navigation }) {
     await sound.playAsync();}
 
     if(soundfile == "1"){
-      const { sound } = await Audio.Sound.createAsync( require(`./assets/${"ping.mp3"}`)
+      const { sound } = await Audio.Sound.createAsync( require(`./assets/${"elec.mp3"}`)
       );
       setSound(sound);
       console.log('Playing Sound');
@@ -40,7 +40,7 @@ export function Video({ navigation }) {
         await sound.playAsync();}
 
         if(soundfile == "3"){
-          const { sound } = await Audio.Sound.createAsync( require(`./assets/${"elec.mp3"}`)
+          const { sound } = await Audio.Sound.createAsync( require(`./assets/${"ping.mp3"}`)
           );
           setSound(sound);
           console.log('Playing Sound');
@@ -58,26 +58,29 @@ export function Video({ navigation }) {
 
     return ( // Use calculator styling
         
-        <View>
-
+        <View style= {{flex: 1, flexWrap: 'wrap', flexDirection: 'row', imagebackground: ""}}>
+          
+        <Image style = {{ width: "100%", height: "100%", position: "absolute", resizeMode: "cover"}} 
+         source={require("./assets/thetrip.gif")} />
+ 
         <TouchableOpacity onPress={()=> clicked(setFile,0)}>
-        <Image style={{position: "center", width: "100%", height: "25%", resizeMode: "contain", marginTop: 25,}} 
+        <Image style={styles.musicplay} 
         source={require('./assets/icon.png')} />
         </TouchableOpacity>
 
         <TouchableOpacity onPress={()=> clicked(setFile,1)}>
-        <Image style={{position: "center" ,width: "100%" , height: "25%", resizeMode: "contain", marginTop: -20}} 
+        <Image style={styles.musicplay}  
         source={require('./assets/skelly.gif')} />
         </TouchableOpacity>
 
         <TouchableOpacity onPress={()=> clicked(setFile,2)}>
-        <Image style={{position: "center" ,width: "100%" , height: "25%", resizeMode: "contain", marginTop: -20}} 
-        source={require('./assets/skelly.gif')} />
+        <Image style={styles.musicplay}  
+        source={require('./assets/cropsigma.gif')} />
         </TouchableOpacity>
 
         <TouchableOpacity onPress={()=> clicked(setFile,3)}>
-        <Image style={{position: "center" ,width: "100%" , height: "25%", resizeMode: "contain", marginTop: -20}} 
-        source={require('./assets/skelly.gif')} />
+        <Image style={styles.musicplay} 
+        source={require('./assets/pizzabase.png')} />
         </TouchableOpacity>
         
         </View>
