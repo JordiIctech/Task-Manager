@@ -7,16 +7,44 @@ export function Video({ navigation }) {
 
   const [sound, setSound] = React.useState();
 
-    var soundfile = "PassingThrough.mp3"
+  var [soundfile, setFile] = React.useState(0);
+
+  function clicked(set,file){
+    set(soundfile = file)
+    playSound()
+  }
+
 
   async function playSound() {
     console.log('Loading Sound');
-    const { sound } = await Audio.Sound.createAsync( require(`./assets/${soundfile}`)
+    
+    if(soundfile == "0"){
+    const { sound } = await Audio.Sound.createAsync( require(`./assets/${"PassingThrough.mp3"}`)
     );
     setSound(sound);
-
     console.log('Playing Sound');
-    await sound.playAsync();
+    await sound.playAsync();}
+
+    if(soundfile == "1"){
+      const { sound } = await Audio.Sound.createAsync( require(`./assets/${"ping.mp3"}`)
+      );
+      setSound(sound);
+      console.log('Playing Sound');
+      await sound.playAsync();}
+
+      if(soundfile == "2"){
+        const { sound } = await Audio.Sound.createAsync( require(`./assets/${"woosh.mp3"}`)
+        );
+        setSound(sound);
+        console.log('Playing Sound');
+        await sound.playAsync();}
+
+        if(soundfile == "3"){
+          const { sound } = await Audio.Sound.createAsync( require(`./assets/${"elec.mp3"}`)
+          );
+          setSound(sound);
+          console.log('Playing Sound');
+          await sound.playAsync();}
   }
 
   React.useEffect(() => {
@@ -32,13 +60,23 @@ export function Video({ navigation }) {
         
         <View>
 
-        <TouchableOpacity onPress={()=> playSound()}>
-        <Image style={{position: "center", width: "100%", height: "50%", resizeMode: "contain", marginTop: 25,}} 
+        <TouchableOpacity onPress={()=> clicked(setFile,0)}>
+        <Image style={{position: "center", width: "100%", height: "25%", resizeMode: "contain", marginTop: 25,}} 
         source={require('./assets/icon.png')} />
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={()=> playSound()}>
-        <Image style={{position: "center" ,width: "100%" , height: "60%", resizeMode: "contain", marginTop: -20}} 
+        <TouchableOpacity onPress={()=> clicked(setFile,1)}>
+        <Image style={{position: "center" ,width: "100%" , height: "25%", resizeMode: "contain", marginTop: -20}} 
+        source={require('./assets/skelly.gif')} />
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={()=> clicked(setFile,2)}>
+        <Image style={{position: "center" ,width: "100%" , height: "25%", resizeMode: "contain", marginTop: -20}} 
+        source={require('./assets/skelly.gif')} />
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={()=> clicked(setFile,3)}>
+        <Image style={{position: "center" ,width: "100%" , height: "25%", resizeMode: "contain", marginTop: -20}} 
         source={require('./assets/skelly.gif')} />
         </TouchableOpacity>
         
