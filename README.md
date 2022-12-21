@@ -15,10 +15,12 @@
 - https://stackoverflow.com/questions/54317501/setinterval-not-clearing-properly-in-react-js-when-dealing-with-react-youtube-pa
 
 ## Current Problems:
+- Fix long loading times, stated since upgrade performed.
 ### Calculator App
-- Improve button formatting
 - Look into changing TouchableOpacity to pressable (https://reactnative.dev/docs/pressable)
 - Add a del/back button (<-)
+- Add more complicated functions, like SQRT
+- Make it so it displays division symbol while it input "/" into the calculator.
 - No automatic adding operation just adds number to currently displayed one. (Maybe not even a problem.)
 ### Task App
 - Change task background
@@ -26,12 +28,9 @@
 - Add memory to app, to remember task progress
 ### Platformer
 - Change it into the zombie game where they randomly spawn and home to you. Shoot where you touch.
-- Intervals not resetting, when initiated it stacks.
-### Video Player
-- Make image show, possibly gif
+- Intervals not resetting, when initiated it stacks. Fix intervals to stop.
+### Music Player
 - Audio Link (https://docs.expo.dev/versions/latest/sdk/audio/)
-- Play video from link.
-- Play song on button press.
 - Play song in background, record audio
 
 ## Permanent Links:
