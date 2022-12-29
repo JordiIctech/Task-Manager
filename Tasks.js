@@ -24,7 +24,7 @@ export function Tasks({ navigation }) {
         return (   // Function inclosed within a "fragment".
             <>   
         <Text style = {{margin: 10, opacity: taskO}}>{taskC} out of {taskC + taskM} completed</Text>
-        <View  style={{ height: "100%", width: "100%", flexDirection: 'row', opacity: taskO}}>
+        <View  style={{height: "100%", width: "100%", flexDirection: 'row', opacity: taskO}}>
         <View style={{ backgroundColor: "#009900", flex: taskC, marginTop: 10}} />
         <View style={{ backgroundColor: "#cc0000", flex: taskM, marginTop: 10}} />
 
