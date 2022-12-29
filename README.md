@@ -16,7 +16,7 @@
 
 ## Current Problems:
 - Fix long loading times, stated since upgrade performed.
-### Calculator App
+### Calculator App (Future Work)
 - Look into changing TouchableOpacity to pressable (https://reactnative.dev/docs/pressable)
 - Add a del/back button (<-)
 - Add more complicated functions, like SQRT
@@ -29,7 +29,7 @@
 ### Platformer
 - Change it into the zombie game where they randomly spawn and home to you. Shoot where you touch.
 - Intervals not resetting, when initiated it stacks. Fix intervals to stop.
-### Music Player
+### Music Player (Future Work)
 - Audio Link (https://docs.expo.dev/versions/latest/sdk/audio/)
 - Play song in background, record audio
 
@@ -42,17 +42,3 @@
 - Importing JS to JS: https://bobbyhadz.com/blog/javascript-import-function-from-another-file
 - Hook Statements: https://reactjs.org/docs/hooks-state.html (To update views on user input)
  
-## Past Link:
-- https://reactnavigation.org/docs/navigating/ (partial: "Navigate to a route multiple times​" skipped)
-- https://reactnavigation.org/docs/hello-react-navigation (completed)
-- https://reactnavigation.org/docs/getting-started/ (completed)
-- https://docs.expo.dev/tutorial/configuration/ (completed)
-- https://docs.expo.dev/tutorial/sharing/ (skipped)
-- https://docs.expo.dev/tutorial/image-picker/ (completed)
-- https://docs.expo.dev/tutorial/image/ (completed)
-- https://docs.expo.dev/tutorial/planning/ (completed)
-- https://docs.expo.dev/get-started/errors/ (completed)
-- https://docs.expo.dev/get-started/installation/ (completed)
-- https://reactnative.dev/docs/the-new-architecture/use-app-template (completed)
-- https://reactnative.dev/docs/environment-setup (completed)
-- https://www.reactnativeschool.com/building-an-ios-calculator-clone-with-react-native (Ongoing: "Styling Text in React Native" complete)
