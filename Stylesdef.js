@@ -108,7 +108,6 @@ export const styles = StyleSheet.create({
       color: "#333333",
       fontSize: 40,
       textAlign: "center",
-      
     },
 
     musicplay:{

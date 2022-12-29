@@ -12,7 +12,7 @@ export function Testing({ navigation }) {
   var velocity = 10
   let interval
 //---------------------------------------------------- Unfinished
-/*
+
 function direction(SX, X, SY, Y){
   positions()
   SX(xchange = X)
@@ -31,28 +31,6 @@ function positions(){
     return () => clearInterval(interval);
   }, []); // Not sure what [] does.
 }
-*/
-
-function position(){
-  setCountL(leftP += xchange)
-  setCountT(topP += ychange);
-  console.log("inner", xchange, ychange);
-  }
-
-
-  function starting(){
-    return setInterval(position, 1000);
-  }
-  
-  var control = starting()
-
-  function direction(SX, X, SY, Y){
-    clearInterval(control) //Stops set interval
-    starting()
-    SX(xchange = X)
-    SY(ychange = Y)
-    console.log("Outer", xchange, ychange)
-  }
 
 //---------------------------------------------------- Unfinished
 
