@@ -15,7 +15,7 @@
 - https://stackoverflow.com/questions/54317501/setinterval-not-clearing-properly-in-react-js-when-dealing-with-react-youtube-pa
 
 ## Current Problems:
-- Fix long loading times, stated since upgrade performed.
+- Fix long loading times, started since upgrade performed.
 ### Calculator App (Future Work)
 - Look into changing TouchableOpacity to pressable (https://reactnative.dev/docs/pressable)
 - Add a del/back button (<-)
