@@ -16,6 +16,7 @@
 
 ## Current Problems:
 - Fix long loading times, started since upgrade performed.
+- Update dependencies
 ### Calculator App (Future Work)
 - Look into changing TouchableOpacity to pressable (https://reactnative.dev/docs/pressable)
 - Add a del/back button (<-)
